@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import LandingPage from './components/LandingPage';
 import AuthComponent from './components/AuthComponent';
 import RegisterComponent from './components/RegisterComponent';
 import Dashboard from './components/Dashboard';
@@ -10,7 +11,8 @@ function App() {
   return (
     <div className="app">
       <Routes>
-        <Route path="/" element={<AuthComponent />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<AuthComponent />} />
         <Route path="/register" element={<RegisterComponent />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/agendar" element={<BookingComponent />} />
