@@ -1,0 +1,116 @@
+/* Fondo general */
+.register-container {
+  background-image: url('/images/fondo_barberia.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+/* Contenedor del formulario */
+.register-form-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Encabezado */
+.register-header h1 {
+  margin-top: 10px;
+  font-size: 28px;
+  color: #333;
+}
+
+.register-header p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.register-logo {
+  height: 60px;
+}
+
+/* Grupos de inputs */
+.register-input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.register-input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.register-input-group input,
+.register-input-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+/* Botón de registro */
+.register-button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background-color: #333;
+}
+
+/* Mensaje de éxito o error */
+.register-message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.register-message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.register-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Enlace de volver */
+.register-back-button {
+  display: inline-block;
+  margin-top: 20px;
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.register-back-button:hover {
+  color: #444;
+}
