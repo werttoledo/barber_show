@@ -113,11 +113,12 @@
   display: flex;
   justify-content: center;
   gap: 16px;
+  margin-top: 1rem;
 }
 
 .social-button {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border: none;
   border-radius: 8px;
   background: rgba(32, 32, 32, 0.95);
@@ -125,25 +126,37 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .social-button:hover {
-  transform: translateY(-1px);
+  transform: translateY(-3px);
   background: rgba(48, 48, 48, 0.95);
 }
 
 .social-button svg {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.social-button.google {
+  background: rgba(219, 68, 55, 0.15);
+}
+
+.social-button.facebook {
+  background: rgba(24, 119, 242, 0.15);
 }
 
 .social-button.google:hover {
-  box-shadow: 0 2px 8px rgba(219, 68, 55, 0.3);
+  background: rgba(219, 68, 55, 0.25);
+  box-shadow: 0 4px 8px rgba(219, 68, 55, 0.3);
 }
 
 .social-button.facebook:hover {
-  box-shadow: 0 2px 8px rgba(24, 119, 242, 0.3);
+  background: rgba(24, 119, 242, 0.25);
+  box-shadow: 0 4px 8px rgba(24, 119, 242, 0.3);
 }
 
 /* Responsive */
