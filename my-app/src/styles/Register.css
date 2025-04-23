@@ -1,9 +1,11 @@
 /* Fondo general */
 .register-container {
-  background-image: url('/images/fondo_barberia.png');
+  /* Aquí aplicamos tu imagen de fondo */
+ background-color: white;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -15,12 +17,15 @@
 /* Contenedor del formulario */
 .register-form-container {
   background-color: rgba(255, 255, 255, 0.95);
-  padding: 40px;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
   width: 100%;
   max-width: 400px;
   text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Encabezado */
@@ -34,6 +39,33 @@
   font-size: 14px;
   color: #666;
   margin-bottom: 20px;
+}
+
+.register-header img {
+  height: 210px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  border-radius: 50%;
+  display: flex;
+  margin-bottom: 30px;
+  background-position: 50%;
+}
+
+.CONT-IMG {
+  background-image:
+    url('/images/fondo_barberia.png'),
+    linear-gradient(rgba(14,13,13,0.815), rgba(0,0,0,0.342));
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: flex;
+  height: 200px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
 }
 
 .register-logo {
@@ -77,7 +109,6 @@
   transition: background-color 0.3s;
   margin-top: 10px;
 }
-
 .register-button:hover {
   background-color: #333;
 }
@@ -90,12 +121,10 @@
   font-size: 14px;
   font-weight: bold;
 }
-
 .register-message.success {
   background-color: #d4edda;
   color: #155724;
 }
-
 .register-message.error {
   background-color: #f8d7da;
   color: #721c24;
@@ -110,7 +139,6 @@
   font-weight: bold;
   transition: color 0.2s;
 }
-
 .register-back-button:hover {
   color: #444;
 }

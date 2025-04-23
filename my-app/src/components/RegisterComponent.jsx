@@ -20,10 +20,10 @@ const RegisterComponent = () => {
         password,
         options: {
           data: {
-            role: role,
-            barber_code: role === 'Barbero' ? barberCode : null
-          }
-        }
+            role,
+            barber_code: role === 'Barbero' ? barberCode : null,
+          },
+        },
       });
 
       if (error) {
@@ -34,7 +34,7 @@ const RegisterComponent = () => {
         setMessageType('success');
         setTimeout(() => navigate('/'), 3000);
       }
-    } catch (error) {
+    } catch (err) {
       setMessage('Error en el registro. Por favor, intenta nuevamente.');
       setMessageType('error');
     }
@@ -44,11 +44,13 @@ const RegisterComponent = () => {
     <div className="register-container">
       <div className="register-form-container">
         <div className="register-header">
-          <img 
-            src="/images/logo_barberia.png" 
-            alt="Logo Barbería" 
-            className="register-logo"
-          />
+          <div className="CONT-IMG">
+            <img
+              src="/images/logo_barberia.png"
+              alt="Logo Barbería"
+              className="register-logo"
+            />
+          </div>
           <h1>Registro</h1>
           <p>Únete a nuestra comunidad de barbería</p>
         </div>
@@ -78,8 +80,8 @@ const RegisterComponent = () => {
 
           <div className="register-input-group">
             <label>Rol</label>
-            <select 
-              value={role} 
+            <select
+              value={role}
               onChange={(e) => setRole(e.target.value)}
               className="role-select"
             >
